@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "event-correlation-service"
+version = "0.1.0"
+description = "A simple event correlation service"
+authors = ["Tyler Fisher <tylerfisher@tylerfisher.ca>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+click = "^8.1.7"
+
+[tool.poetry.scripts]
+event-correlation-service = "event_correlation_service.cli:main"
+service = "event_correlation_service.cli:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
